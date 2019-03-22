@@ -1,0 +1,4 @@
+include ':presantation'
+include ':domain'
+include ':data'
+include ':device'
