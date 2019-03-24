@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Rating NSTU Student</string>
 
-    <string name="NSTU">Нгту</string>
+    <string name="NSTU">НГТУ</string>
     <string name="Input_login">Введите логин</string>
     <string name="input_login">Введите пароль</string>
     <string name="singIn">Вход</string>
+    <string name="achievements">Достижения</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="sing_out">Выход</string>
 </resources>

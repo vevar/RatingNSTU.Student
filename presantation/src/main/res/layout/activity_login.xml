@@ -13,7 +13,6 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="15dp">
-
         <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -27,9 +26,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/progressBar"
                     android:layout_gravity="center"
-                    android:visibility="invisible"/>
+            />
         </FrameLayout>
-
         <EditText
                 android:id="@+id/fld_username"
                 android:layout_width="match_parent"
@@ -54,6 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="@string/singIn"
+                android:onClick="@{() -> viewModel.singIn()}"
                 android:textColor="@color/white"
                 android:background="@drawable/btn_round"
                 android:layout_marginTop="10dp"/>
@@ -65,8 +64,11 @@
                 android:minHeight="50dp"
                 android:gravity="center"
                 android:textColor="@color/white"
-                android:text="@{viewModel.message}" tools:text="Error"
+                android:text="@{viewModel.message}"
+                tools:text="Error"
                 android:background="@drawable/lbl_round_error"
                 android:visibility="invisible"/>
+
+
     </LinearLayout>
 </layout>

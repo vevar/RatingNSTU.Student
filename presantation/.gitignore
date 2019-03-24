@@ -6,3 +6,4 @@
 .DS_Store
 .externalNativeBuild
 /build
+/.idea

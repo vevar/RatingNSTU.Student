@@ -36,14 +36,21 @@ android {
 
 dependencies {
 
-    def dependencies = rootProject.ext.domainDependencies
+    def dependencies = rootProject.ext.dataDependencies
 
     implementation dependencies.kotlinLib
     implementation dependencies.kotlinCoroutinesCore
     implementation dependencies.kotlinCoroutinesAndroid
 
+    implementation project(path: ':domain')
+
     implementation dependencies.roomRuntime
     kapt dependencies.roomCompiler
 
     implementation dependencies.inject
+
+    implementation dependencies.retrofit
+    implementation dependencies.retrofitGsonConverter
+    implementation dependencies.okHttp3Logging
+    implementation dependencies.gson
 }
